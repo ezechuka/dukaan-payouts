@@ -61,7 +61,7 @@ const Sidebar = () => {
         <div className="flex flex-col bg-[#1E2640] p-[16px]">
 
             <div className="flex items-center mb-10">
-                <img src="src/assets/nav_icon.svg" />
+                <img src="nav_icon.svg" />
                 <div className="flex flex-col justify-between ml-5 mr-auto">
                     <p className="font-medium text-[#FFFFFF] text-[15px]">Nishyan</p>
                     <p className="underline text-[#FFFFFF] font-normal text-[13px]">Visit store</p>

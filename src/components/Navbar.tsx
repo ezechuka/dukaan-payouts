@@ -19,11 +19,11 @@ const Navbar = () => {
             {/* ITEM 3 */}
             <div className="flex justify-between space-x-5">
                 <div className="flex justify-center items-center rounded-full p-4 bg-[#E6E6E6]">
-                    <img src={'src/assets/nav-1.svg'} />
+                    <img src={'nav-1.svg'} />
                 </div>
 
                 <div className="flex justify-center items-center rounded-full p-5 bg-[#E6E6E6]">
-                    <img src={'src/assets/nav-2.svg'} />
+                    <img src={'nav-2.svg'} />
                 </div>
             </div>
         </div>
