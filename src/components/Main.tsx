@@ -23,12 +23,12 @@ const Main = () => {
 
             <div className="flex w-full space-x-4 justify-between mt-4">
                 <div className="flex flex-col w-full max-w-[40%] pt-[20px] text-white rounded-md bg-[#146EB4]">
-                    <div className="flex items-center space-x-3 px-[10px]">
+                    <div className="flex items-center space-x-3 px-6">
                         <p className="font-normal text-base">Next Payout</p>
                         <HelpCircle className="w-4 h-4" />
                     </div>
 
-                    <div className="flex items-center justify-between px-[10px]">
+                    <div className="flex items-center justify-between px-6">
                         <p className="font-medium text-[32px]">₹2,312.23</p>
                         <p className="underline ml-auto">23 orders</p>
                         <ChevronRight className="w-4 h-4" />
