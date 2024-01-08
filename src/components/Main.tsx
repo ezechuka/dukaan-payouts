@@ -1,6 +1,7 @@
-import { ChevronRight, HelpCircle } from "lucide-react";
+import { ArrowDownUp, ChevronRight, Download, HelpCircle } from "lucide-react";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "./ui/select";
 import { Input } from "./ui/input";
+import { Button } from "./ui/button";
 
 const Main = () => {
     return (
@@ -20,7 +21,7 @@ const Main = () => {
                 </Select>
             </div>
 
-            <div className="flex w-full space-x-4 justify-between">
+            <div className="flex w-full space-x-4 justify-between mt-4">
                 <div className="flex flex-col w-full max-w-[40%] pt-[20px] text-white rounded-md bg-[#146EB4]">
                     <div className="flex items-center space-x-3 px-[10px]">
                         <p className="font-normal text-base">Next Payout</p>
@@ -33,7 +34,7 @@ const Main = () => {
                         <ChevronRight className="w-4 h-4" />
                     </div>
 
-                    <div className="rounded-sm bg-[#0E4F82] p-1 mt-5">
+                    <div className="flex justify-between rounded-sm bg-[#0E4F82] px-6 py-1 mt-5">
                         <p className="font-normal text-[14px]">Next payout date:</p>
                         <p className="font-medium text-[14px]">Today, 04:00PM</p>
                     </div>
@@ -68,20 +69,31 @@ const Main = () => {
             <p className="font-medium mt-10 text-[20px]">Transactions | This Month</p>
 
             <div className="flex space-x-4 mt-5">
-                <div className="rounded-3xl bg-[#E6E6E6] p-2">
+                <div className="flex items-center rounded-3xl bg-[#E6E6E6] py-1 px-4">
                     <p className="text-[#808080] font-medium text-[14px]">
                         Payouts (22)
                     </p>
                 </div>
 
-                <div className="rounded-3xl bg-[#146EB4] p-2">
+                <div className="flex items-center rounded-3xl bg-[#146EB4] py-1 px-4">
                     <p className="text-white font-medium text-[14px]">
-                        Payouts (22)
+                        Refunds (6)
                     </p>
                 </div>
             </div>
 
-            <Input className="max-w-[30%] mt-5" placeholder="Order ID or transaction ID" />
+            <div className="flex justify-between">
+                <Input className="max-w-[30%] mt-5" placeholder="Order ID or transaction ID" />
+                <div className="flex space-x-3 text-[#4D4D4D]">
+                    <Button variant="outline" className="font-normal inline-flex">
+                        Sort
+                        <ArrowDownUp className="ml-1 w-3 h-3" />
+                    </Button>
+                    <Button variant="outline" className="font-normal inline-flex">
+                        <Download className="w-4 h-4" />
+                    </Button>
+                </div>
+            </div>
 
             <div className="flex justify-between items-center bg-[#F2F2F2] p-3 mt-5">
                 <p className="">Order ID</p>
@@ -93,30 +105,30 @@ const Main = () => {
 
             <div className="flex justify-between items-center p-3">
                 <p className="text-blue-500">#281209</p>
-                <p className="">Successful</p>
-                <p className="">131634495747</p>
-                <p className="">Today, 08:45 PM</p>
+                <p className="flex"><img className="mr-3" src="tag-1.svg" />Successful</p>
+                <p className="-translate-x-[24%] font-light text-gray-600">131634495747</p>
+                <p className="-translate-x-[12%] font-light text-gray-600">Today, 08:45 PM</p>
                 <p className="">₹1,125.00</p>
             </div>
             <div className="flex justify-between items-center p-3">
                 <p className="text-blue-500">#281209</p>
-                <p className="">Successful</p>
-                <p className="">131634495747</p>
-                <p className="">Today, 08:45 PM</p>
+                <p className="flex"><img className="mr-3" src="tag-2.svg" />Processing</p>
+                <p className="-translate-x-[24%] font-light text-gray-600">131634495747</p>
+                <p className="-translate-x-[12%] font-light text-gray-600">Today, 08:45 PM</p>
                 <p className="">₹1,125.00</p>
             </div>
             <div className="flex justify-between items-center p-3">
                 <p className="text-blue-500">#281209</p>
-                <p className="">Successful</p>
-                <p className="">131634495747</p>
-                <p className="">Today, 08:45 PM</p>
+                <p className="flex"><img className="mr-3" src="tag-1.svg" />Successful</p>
+                <p className="-translate-x-[24%] font-light text-gray-600">131634495747</p>
+                <p className="-translate-x-[12%] font-light text-gray-600">Today, 08:45 PM</p>
                 <p className="">₹1,125.00</p>
             </div>
             <div className="flex justify-between items-center p-3">
                 <p className="text-blue-500">#281209</p>
-                <p className="">Successful</p>
-                <p className="">131634495747</p>
-                <p className="">Today, 08:45 PM</p>
+                <p className="flex"><img className="mr-3" src="tag-1.svg" />Successful</p>
+                <p className="-translate-x-[24%] font-light text-gray-600">131634495747</p>
+                <p className="-translate-x-[12%] font-light text-gray-600">Today, 08:45 PM</p>
                 <p className="">₹1,125.00</p>
             </div>
 
