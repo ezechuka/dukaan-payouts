@@ -6,7 +6,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between py-[12px] px-[32px] border-b-[1px] border-b-[#D9D9D9]">
             {/* ITEM 1 */}
             <div className="flex items-center space-x-5">
-                <p className="text-[20px] font-medium">Payouts</p>
+                <p className="text-[20px] font-medium font-galano500">Payouts</p>
                 <div className="flex space-x-2 items-center">
                     <HelpCircle className="w-4 h-4 text-[#4D4D4D]" />
                     <p className="font-normal text-[12px] text-[#4D4D4D]">How it works?</p>
@@ -14,7 +14,7 @@ const Navbar = () => {
             </div>
 
             {/*    ITEM 2 */}
-            <Input className="max-w-[50%]" placeholder="Search features, tutorials, etc." />
+            <Input className="max-w-[50%] font-galano400 font-normal" placeholder="Search features, tutorials, etc." />
 
             {/* ITEM 3 */}
             <div className="flex justify-between space-x-5">

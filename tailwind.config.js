@@ -16,6 +16,10 @@ module.exports = {
         "2xl": "1400px",
       },
     },
+    fontFamily: {
+      galano400: ['Galano400', 'sans-serif'],
+      galano500: ['Galano500', 'sans-serif'],
+    },
     extend: {
       colors: {
         border: "hsl(var(--border))",

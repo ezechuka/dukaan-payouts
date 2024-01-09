@@ -1,9 +1,9 @@
-import { Banknote, BarChartBig, ChevronDown, Home, LayoutGrid, Megaphone, NotebookText, Palette, PercentCircle, Truck, Users, Wallet, Zap } from "lucide-react";
+import { ChevronDown } from "lucide-react";
 
-const Link = ({ icon, label }: { icon: React.ReactNode, label: string }) => {
+const Link = ({ imgSrc, label }: { imgSrc: string, label: string }) => {
     return (
         <div className="flex space-x-3 text-white">
-            {icon}
+            <img src={imgSrc} className="w-5 h-5" />
             <p className="text-white">{label}</p>
         </div>
     )
@@ -11,47 +11,47 @@ const Link = ({ icon, label }: { icon: React.ReactNode, label: string }) => {
 
 const sidebarLinks = [
     {
-        icon: <Home />,
+        icon: 'home.svg',
         label: 'Home'
     },
     {
-        icon: <NotebookText />,
+        icon: 'orders.svg',
         label: 'Orders'
     },
     {
-        icon: <LayoutGrid />,
+        icon: 'products.svg',
         label: 'Products'
     },
     {
-        icon: <Truck />,
+        icon: 'delivery.svg',
         label: 'Delivery'
     },
     {
-        icon: <Megaphone />,
+        icon: 'marketing.svg',
         label: 'Marketing'
     },
     {
-        icon: <BarChartBig />,
+        icon: 'analytics.svg',
         label: 'Analytics'
     },
     {
-        icon: <Banknote />,
+        icon: 'payouts.svg',
         label: 'Payouts'
     },
     {
-        icon: <PercentCircle />,
+        icon: 'discounts.svg',
         label: 'Discounts'
     },
     {
-        icon: <Users />,
+        icon: 'audience.svg',
         label: 'Audience'
     },
     {
-        icon: <Palette />,
+        icon: 'appearance.svg',
         label: 'Appearance'
     },
     {
-        icon: <Zap />,
+        icon: 'plugin.svg',
         label: 'Plugins'
     },
 ]
@@ -61,10 +61,10 @@ const Sidebar = () => {
         <div className="flex flex-col bg-[#1E2640] p-[16px]">
 
             <div className="flex items-center mb-10">
-                <img src="nav_icon.svg" />
-                <div className="flex flex-col justify-between ml-5 mr-auto">
+                <img src="nav_icon.png" />
+                <div className="flex flex-col justify-between space-y-2 ml-5 mr-auto">
                     <p className="font-medium text-[#FFFFFF] text-[15px]">Nishyan</p>
-                    <p className="underline text-[#FFFFFF] font-normal text-[13px]">Visit store</p>
+                    <p className="underline text-[#FFFFFF] font-galano500 font-normal text-[13px]">Visit store</p>
                 </div>
                 <ChevronDown className="text-white" />
             </div>
@@ -72,14 +72,14 @@ const Sidebar = () => {
             <div className="flex flex-col space-y-5">
                 {
                     sidebarLinks.map(link => (
-                        <Link icon={link.icon} label={link.label} />
+                        <Link imgSrc={link.icon} label={link.label} />
                     ))
                 }
             </div>
 
             <div className="flex mt-14 p-[12px] space-x-4 justify-start rounded-md bg-white/40">
-                <div className="p-2 rounded-md bg-white/40">
-                    <Wallet />
+                <div className="flex items-center px-2 rounded-md bg-white/40">
+                    <img src="wallet.svg" className="w-6 h-6" />
                 </div>
 
                 <div className="flex flex-col text-white">

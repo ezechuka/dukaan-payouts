@@ -81,3 +81,13 @@
 body {
   font-family: Inter, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
+
+@font-face {
+  font-family: "Galano500";
+  src: url("../public/fonts/GalanoGrotesqueMedium.otf");
+}
+
+@font-face {
+  font-family: "Galano400";
+  src: url("../public/fonts/GalanoGrotesqueRegular.otf");
+}
